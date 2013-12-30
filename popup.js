@@ -15,7 +15,6 @@ window.onload = function() {
           // you can use strings instead of objects
           // if you don't  want to define default values
           chrome.storage.local.get('sites', function (result) {
-              console.log(result.sites)
               updateSiteList(result.sites);
           });
       });
@@ -35,7 +34,7 @@ window.onload = function() {
     chrome.storage.local.get({sites: []}, function (result) {
       listSites = result.sites;
     });
-    console.log(listSites);
+
     for (var i=0;i<listSites.length;i++) {
       var newElement = document.createElement("li");
       var newContent = document.createTextNode(listSites[i].siteName);
