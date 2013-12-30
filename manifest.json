@@ -4,11 +4,11 @@
   "name": "Time Sink",
   "description": "You're wasting too much time on your Facebooks and your Twitters. Fix that.",
   "version": "1.0",
-  "permissions": [
-    "storage"
-  ],
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
-  }
+  },
+  "permissions": [
+    "storage"
+  ]
 }
